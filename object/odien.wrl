@@ -1,0 +1,22 @@
+#VRML V2.0 utf8
+
+DEF	odien Transform{
+	children	[
+		DEF ocam Shape {
+			appearance Appearance {
+			    texture ImageTexture {
+
+				url "F:\môn học\Kì 2 năm 3\thực tại ảo\Main BTL TTA\image\odien.jpg"
+
+				repeatS TRUE
+
+				repeatT TRUE
+
+				}
+			}
+			geometry	Box	{size 1 0.5 0.025}
+		}
+	
+	]
+
+}

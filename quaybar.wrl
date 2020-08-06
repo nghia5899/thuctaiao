@@ -1,0 +1,96 @@
+#VRML V2.0 utf8
+
+Transform {
+	children [
+		Shape {
+
+			geometry Box { size 5 2 1}
+			 appearance DEF maubar Appearance {
+				material Material {
+					diffuseColor .09 .03 0
+					specularColor .22 .1 .1
+					ambientIntensity .01
+					shininess .05
+				}
+			}
+		}
+	]
+}
+Transform {
+	translation	-1  1.25 0
+	children [
+		Shape {
+			appearance USE maubar
+			geometry Box { size 3 0.5 1}
+		}
+	]
+}
+Transform {
+	translation	0  1 0.55
+	children [
+		Shape {
+			appearance USE maubar
+			geometry Box { size 5 4 0.1}
+		}
+	]
+}
+Transform {
+	translation	-2  0.25  -3.5
+	children [
+		Shape {
+			appearance USE maubar
+			geometry Box { size 1 2.5 6}
+		}
+	]
+}
+Transform {
+	translation	-2.45 2.25  -3	
+	children [
+		Shape {
+			appearance USE maubar
+			geometry Box { size 0.1 1.5 7}
+		}
+	]
+}
+
+ 
+Transform {
+	translation	 -2.25 3.05 -2.95	
+	children [
+		Shape {
+			appearance USE maubar
+			geometry Box { size 0.5 0.1 7.1}
+		}
+	]
+}
+
+#ly
+Transform {
+	scale 0.3 0.3 0.3
+	translation	 -2.25 3.1 -2.95	
+	children [
+		Inline { url "ly.wrl"}
+	]
+}
+Transform {
+	scale 0.3 0.3 0.3
+	translation	 -2.25 3.1 -2.95	
+	children [
+		Inline { url "ly.wrl"}
+	]
+}
+Transform {
+	scale 0.3 0.3 0.3
+	translation	 -2.25 3.1 -4	
+	children [
+		Inline { url "lynuocam.wrl"}
+	]
+}
+ Transform {
+	scale 0.2 0.2 0.2
+	translation	 -2.25 3.1 -5	
+	children [
+		Inline { url "cocbia2.wrl"}
+	]
+}
+

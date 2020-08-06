@@ -1,0 +1,264 @@
+#VRML V2.0 utf8
+
+
+
+Transform {
+	rotation 0 0 1 -1.57
+	children [
+	
+Transform {
+	rotation 1 0 0 -1.57
+	children [
+		DEF	caiquat1 Transform {
+		
+	children [
+		DEF caiquat Transform {
+		translation	0 -1.2 0
+	children [
+						DEF loiquat Shape {
+
+
+				geometry Extrusion {
+					crossSection [
+					1.00	0.00
+					0.98	0.20
+					0.92	0.38
+					0.83	0.56
+					0.71	0.71
+					0.56	0.83
+					0.38	0.92
+					0.20	0.98
+					0.00	1.00
+					-0.20	0.98
+					-0.38	0.92
+					-0.56	0.83
+					-0.71	0.71
+					-0.83	0.56
+					-0.92	0.38
+					-0.98	0.20
+					-1.00	0.00
+					-0.98	-0.20
+					-0.92	-0.38
+					-0.83	-0.56
+					-0.71	-0.71
+					-0.56	-0.83
+					-0.38	-0.92
+					-0.20	-0.98
+					0.00	-1.00
+					0.20	-0.98
+					0.38	-0.92
+					0.56	-0.83
+					0.71	-0.71
+					0.83	-0.56
+					0.92	-0.38
+					0.98	-0.20
+					1		 0]
+					spine [ 0 0 0 , 0 1.7 0 , 0 1.8 0 , 0 1.9 0 , 0 2 0]
+					scale [ 1 1  1 1  0.9 0.9  0.8 0.8  0.7 0.7 ]
+	
+
+
+					solid FALSE
+
+					beginCap TRUE
+					endCap TRUE
+				}
+				appearance Appearance {
+					material Material {
+						diffuseColor 0 0 0
+						specularColor .29 .3 .29
+						ambientIntensity 0
+						shininess .08
+					}
+				} 
+			}
+		  DEF canhquat	Transform {
+				translation	 0 -0.5 0
+				scale 8 10 8 
+				children [
+					Inline {
+						url	"quattran.wrl"
+					}
+				  DEF	thoigiancanhquay TimeSensor	{
+						cycleInterval 0.5
+						loop TRUE
+						enabled	FALSE	
+					}
+				  DEF	canhquatquay OrientationInterpolator	{
+						key	[0  1]
+						keyValue [0 0 0 0   0 1 0 3.14 ]
+					}
+				]
+			}
+
+			
+			Transform {
+				translation	0 -2 0
+				children [
+					Inline {url "longquat.wrl"}
+				]
+			}
+			
+			
+			
+			DEF	thoigianquay TimeSensor	{
+				cycleInterval 3
+				loop TRUE
+				enabled	FALSE
+				startTime 0
+				stopTime 3
+			}
+			DEF	thoigiandungquay TimeSensor	{
+				cycleInterval 3
+				loop TRUE
+				enabled	FALSE
+				startTime 0
+				stopTime 3
+			}
+			DEF	quatquay OrientationInterpolator	{
+				key	[0 0.25 0.5 0.75 1]
+				keyValue [0 0 0 0   1 0 0 0.5  0 0 0 0  1 0 0 -0.5  0 0 0 0 ]
+			}											  
+
+			DEF ma Script {
+
+				eventIn SFBool turnOn
+
+				eventOut SFBool On
+
+				eventOut SFBool Off
+
+				field SFBool turn FALSE
+				#val luon luon bang true
+
+				url "javascript:
+
+				function turnOn(val){
+
+				if(val){
+				
+
+				turn = !turn;
+
+				if(turn)
+
+				{
+
+				On= TRUE;
+
+                        				Off=FALSE;
+
+            	}
+
+        				else
+
+        				{
+
+                        				On=FALSE;
+
+				Off=TRUE;
+
+        				}
+
+            				}
+
+    				}
+
+    				"
+
+				}
+
+
+
+	]
+}
+		
+	]
+}
+
+
+
+Transform {
+				children [
+					 Transform {
+						translation	1 0 0
+						rotation 1 0 0 -1.57
+						scale 0.5 0.5 0.5
+						children [
+							 Shape {
+
+
+						geometry Extrusion {
+							crossSection [
+								0 0  1 0  7 3.5  5 4	1 1 0 1 0 0
+							]
+							spine [0 0 0 0 0.5 0]
+	
+
+
+							solid FALSE
+
+							beginCap TRUE
+							endCap TRUE
+						}
+						appearance Appearance {
+							material Material {
+								diffuseColor .88 .15 .01
+								specularColor .19 .03 .03
+								ambientIntensity .0833
+								shininess .08
+							}
+						} 
+					}
+						]
+					}
+				]
+			}
+	
+	]
+}
+	]
+}
+
+ DEF congtacdien Transform {
+	scale 2 2 2	
+	rotation 1 0 0 -0.4
+	translation	0 -10 2
+	children [
+		Transform {
+			translation	0 -5 0
+			children [
+				Inline {url "cong_tac_dien.wrl"}
+		DEF	batquat TouchSensor	{
+				enabled	TRUE
+			}
+
+			DEF light1 DirectionalLight {
+
+				on FALSE
+
+				intensity 1
+
+				ambientIntensity 100
+
+				color 1 1 0
+
+				direction 1 0 0
+
+				}
+			]
+		}
+		
+	]
+}
+
+
+ROUTE batquat.isActive TO ma.turnOn
+ROUTE ma.On	 TO light1.on
+ROUTE ma.On  TO thoigianquay.enabled
+ROUTE ma.On	TO thoigiancanhquay.enabled
+ROUTE batquat.touchTime	TO thoigianquay.startTime
+ROUTE thoigianquay.fraction_changed	TO quatquay.set_fraction
+ROUTE thoigiancanhquay.fraction_changed	TO canhquatquay.set_fraction
+ROUTE canhquatquay.value_changed TO	canhquat.rotation
+ROUTE quatquay.value_changed TO	caiquat1.rotation

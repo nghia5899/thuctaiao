@@ -1,0 +1,77 @@
+#VRML V2.0 utf8
+Transform {
+   rotation 1  0 0 1.57
+   children	[
+		   DEF	quabongxoay Transform {
+	
+    children	[
+		
+	    Transform {
+			
+		    children [
+			
+			   Shape {
+
+					geometry	Box	{size 3 0.5 3}
+					appearance Appearance {
+						material Material {
+							diffuseColor .31 .22 0
+							specularColor .73 .65 .47
+							ambientIntensity .00333
+							shininess .13
+						}
+					}
+
+		
+		}
+			]
+		}
+			
+			DEF	timedichchuyen TimeSensor {
+			    cycleInterval 8
+				startTime 0 
+				stopTime 100
+				enabled	TRUE
+				loop TRUE
+			}
+			DEF  posInpolater PositionInterpolator	{
+				key [0 0.25 0.5 0.75 1]
+				keyValue [0 0 0, ,5 0  0 ,5 0 -5 ,0 0 -5, 0 0 0 ]
+			}
+			DEF  rotateInpolater OrientationInterpolator {
+				key [0 0.25 0.5 0.75 1]
+				keyValue [0 1 0 0,0 1 0 1.57 ,0 1 0 3.14 , 0 1 0 4.71 ,0 1 0 6.28]
+			}
+			DEF	T1 TouchSensor {
+			     enabled TRUE
+			}
+			DEF	T2 TouchSensor {
+			      enabled TRUE
+			}
+			DEF	PS PlaneSensor {
+			  enabled TRUE
+			  autoOffset TRUE
+			  offset 0 0 0
+			  minPosition 0 -5  
+			  maxPosition 0 5 
+			}
+	]
+}
+   ]
+}
+
+#ROUTE timedichchuyen.fraction_changed TO posInpolater.set_fraction
+#ROUTE posInpolater.value_changed TO	quabongxoay.translation
+
+#ROUTE timedichchuyen.fraction_changed TO rotateInpolater.set_fraction
+#ROUTE rotateInpolater.value_changed	 TO	quabongxoay.rotation
+
+# ROUTE T1.touchTime	 TO	timedichchuyen.startTime
+# ROUTE timedichchuyen.fraction_changed  TO posInpolater.set_fraction
+# ROUTE  posInpolater.value_changed  TO quabongxoay.translation
+  
+# ROUTE timedichchuyen.fraction_changed TO rotateInpolater.set_fraction
+# ROUTE rotateInpolater.value_changed TO	quabongxoay.rotation
+
+# ROUTE T2.touchTime	TO timedichchuyen.stopTime
+ROUTE PS.translation_changed TO	quabongxoay.translation

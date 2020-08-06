@@ -1,0 +1,98 @@
+#VRML V2.0 utf8
+
+DEF	bonhoamain Transform {
+	translation	10 0 0
+	children	[
+	                									   DEF	bonhoa Shape {
+										appearance Appearance {
+											texture ImageTexture	{
+												repeatS	TRUE
+												repeatT	TRUE
+
+											   url "image\matduong.jpg"
+											}
+										}
+    									geometry Box {size 70 1 15}
+									}
+									Transform {
+									   translation 0 0.5 8
+									   children	[
+    												   DEF	thanhtuongdai Shape	{
+														   appearance Appearance {
+																	texture ImageTexture	{
+																		repeatS	TRUE
+																		repeatT	TRUE
+
+																	   url "image\matduong.jpg"
+																	}
+																}
+				            									geometry Box {size 70 2 2}
+												}
+									   ]
+									}
+									Transform {
+									   translation 0 0.5 -8
+									   children	[
+    												   USE thanhtuongdai
+		
+									   ]
+									}
+	]
+
+}
+Transform {
+	translation	-20 0 0
+    children [
+	    Inline {
+		  url "lacaydai.wrl"
+		}
+	]
+}
+Transform {
+	translation	-20 0 2
+    children [
+	    Inline {
+		  url "lacaydai.wrl"
+		}
+	]
+}
+Transform {
+	translation	-20 0 -2
+    children [
+	    Inline {
+		  url "lacaydai.wrl"
+		}
+	]
+}
+Transform {
+	translation	-20 0 4
+    children [
+	    Inline {
+		  url "lacaydai.wrl"
+		}
+	]
+}
+Transform {
+	translation	-20 0 -4
+    children [
+	    Inline {
+		  url "lacaydai.wrl"
+		}
+	]
+}
+Transform {
+	translation	-20 0 5
+    children [
+	    Inline {
+		  url "lacaydai.wrl"
+		}
+	]
+}
+Transform {
+	translation	-20 0 -5
+    children [
+	    Inline {
+		  url "lacaydai.wrl"
+		}
+	]
+}

@@ -1,0 +1,106 @@
+#VRML V2.0 utf8
+
+DEF chaisiro Transform {
+ children [
+  Shape {
+   
+    geometry Extrusion {
+     crossSection  [
+      1 0, 0.87 -0.5, 0.5 -0.87,
+      0 -1, -0.5 -0.87, -0.87 -0.5,
+      -1 0, -0.87 0.5, -0.5 0.87,
+      0 1, 0.5 0.87,0.87 0.5,
+      1 0
+     ]
+     spine [0 0 0, 0 0.15 0 0 1.7 0 0 1.8 0 0 2 0 0 2.4 0]
+     scale [0.3 0.3, 0.35 0.35, 0.35 0.35, 0.15 0.15, 0.15 0.15, 0.15 0.15 ]   
+     solid FALSE
+     creaseAngle 1
+        beginCap TRUE
+        endCap TRUE
+    }
+	appearance Appearance {
+		material Material {
+			diffuseColor .337 .0392 .0471
+			specularColor 1 1 1
+			emissiveColor .46 .04 .04
+			ambientIntensity .055
+			transparency .184
+		}
+	}
+
+
+	
+   }
+  ]
+ }
+ DEF napchai Transform {
+ children [
+  Shape {
+   
+    geometry Extrusion {
+     crossSection  [
+      1 0, 0.87 -0.5, 0.5 -0.87,
+      0 -1, -0.5 -0.87, -0.87 -0.5,
+      -1 0, -0.87 0.5, -0.5 0.87,
+      0 1, 0.5 0.87,0.87 0.5,
+      1 0
+     ]
+     spine [ 0 2.2 0 0 2.4 0]
+     scale [0.155 0.155, 0.155 0.155 ] 
+     solid FALSE
+     creaseAngle 1
+        beginCap TRUE
+
+        endCap TRUE
+    }
+	appearance Appearance {
+		material Material {
+			diffuseColor .8 0 0
+			specularColor .5 .5 .5
+			emissiveColor .15 0 0
+			ambientIntensity 0
+		}
+	}
+	
+   }
+  ]
+ }
+ DEF vo Transform {
+ children [
+  Shape {
+
+    geometry Extrusion {
+     crossSection  [
+      1 0, 0.87 -0.5, 0.5 -0.87,
+      0 -1, -0.5 -0.87, -0.87 -0.5,
+      -1 0, -0.87 0.5, -0.5 0.87,
+      0 1, 0.5 0.87,0.87 0.5,
+      1 0
+     ]
+
+     spine [ 0 0.3 0 0 1.6 0]
+
+     scale [0.351 0.351, 0.351 0.351 ]
+
+     solid TRUE
+
+     creaseAngle 1
+
+        beginCap FALSE
+
+        endCap FALSE
+    }
+appearance Appearance {
+				material Material {}
+				texture	ImageTexture {
+					url "siro.jpg"
+					repeatS	TRUE
+					repeatT	TRUE
+					
+				}
+			}
+	
+   }
+  ]
+ }

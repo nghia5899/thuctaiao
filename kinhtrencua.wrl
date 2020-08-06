@@ -1,0 +1,67 @@
+#VRML V2.0 utf8
+
+Transform {
+	children [
+		DEF	thanhdoc Shape	{
+			geometry Box {size 0.25 1 0.1}
+		}
+
+		Transform {
+			translation	6.75 0 0
+			children [USE thanhdoc]
+		}
+		Transform {
+			translation	3.375 0.4 0
+			children [
+				DEF	thanhngang Shape	{
+				geometry Box {size 6.5 0.2 0.1}
+		}]
+		}
+		Transform {
+			translation	3.375 -0.4 0
+			children [USE thanhngang ]
+		}
+		Transform {
+			translation 1.68 0 0
+			children [
+				DEF	thanhdocnho Shape	{
+				geometry Box {size 0.25 0.6 0.1}
+		}]
+		}
+		Transform {
+			translation 3.375 0 0
+			children [USE thanhdocnho]
+		}
+		Transform {
+			translation 5.055 0 0
+			children [USE thanhdocnho]
+		}
+		Transform {
+			translation 0.84 0 0
+			children [
+				DEF	kinh Shape	{
+						
+				geometry Box {size 1.43 0.6 0.02}
+				appearance Appearance {
+					material Material {
+						ambientIntensity 0
+						transparency .322
+						diffuseColor .506 .8 .8
+					}
+				}
+		}]
+		}
+		Transform {
+			translation 2.52 0 0
+			children [USE kinh ]
+		}
+		Transform {
+			translation 4.2 0 0
+			children [USE kinh ]
+		}
+		Transform {
+			translation 5.88 0 0
+			children [USE kinh ]
+		}
+	]
+}

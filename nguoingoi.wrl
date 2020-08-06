@@ -1,0 +1,713 @@
+#VRML V2.0 utf8
+
+
+
+
+	 DEF nguoi Transform {
+	translation	 0 0 0
+	children [
+		DEF	touch1 TouchSensor { enabled  TRUE }
+Shape {
+			geometry Extrusion {
+				crossSection [
+1.00	0.00
+0.98	0.20
+0.92	0.38
+0.83	0.56
+0.71	0.71
+0.56	0.83
+0.38	0.92
+0.20	0.98
+0.00	1.00
+-0.20	0.98
+-0.38	0.92
+-0.56	0.83
+-0.71	0.71
+-0.83	0.56
+-0.92	0.38
+-0.98	0.20
+-1.00	0.00
+-0.98	-0.20
+-0.92	-0.38
+-0.83	-0.56
+-0.71	-0.71
+-0.56	-0.83
+-0.38	-0.92
+-0.20	-0.98
+0.00	-1.00
+0.20	-0.98
+0.38	-0.92
+0.56	-0.83
+0.71	-0.71
+0.83	-0.56
+0.92	-0.38
+0.98	-0.20
+1	0
+				]
+
+		spine [0 0 0,0 0.2 0,0 2.25 0,0 2.3 0,0 2.35 0, 0 2.4 0, 0 2.45 0, 0 2.5 0]
+		scale [0.75 0.4,0.7 0.35,1 0.5,0.95 0.47,0.9 0.44,0.55 0.37,0.4 0.36,0.35 0.35]
+		#creaseAngle	 0.2
+		solid FALSE
+	
+			}
+			appearance DEF clother Appearance {
+				texture ImageTexture {
+		 
+		 url "aobalo.jpg"}
+			
+			}
+		}
+#dau 
+Transform {
+			translation	0 2.55 0
+			children[
+	    		Shape {
+					geometry Cylinder {
+						height 0.1
+						radius 0.31
+					}
+					
+				}	
+				
+				Transform {
+					translation	0 0 0
+					scale 1 1.05 1
+					children [Shape {
+			geometry Extrusion {
+				crossSection [
+				1.00	0.00
+				0.98	0.20
+				0.92	0.38
+				0.83	0.56
+				0.71	0.71
+				0.56	0.83
+				0.38	0.92
+				0.20	0.98
+				0.00	1.00
+				-0.20	0.98
+				-0.38	0.92
+				-0.56	0.83
+				-0.71	0.71
+				-0.83	0.56
+				-0.92	0.38
+				-0.98	0.20
+				-1.00	0.00
+				-0.98	-0.20
+				-0.92	-0.38
+				-0.83	-0.56
+				-0.71	-0.71
+				-0.56	-0.83
+				-0.38	-0.92
+				-0.20	-0.98
+				0.00	-1.00
+				0.20	-0.98
+				0.38	-0.92
+				0.56	-0.83
+				0.71	-0.71
+				0.83	-0.56
+				0.92	-0.38
+				0.98	-0.20
+				1	0
+			]
+
+						spine [0 0 0,0 0.6 0 0 0.7 0]
+						scale [0.35 0.35 0.45 0.45 0.45 0.45]
+						#creaseAngle	 0.2
+						solid FALSE
+						beginCap TRUE
+						endCap TRUE
+							}
+							appearance	Appearance {
+								texture ImageTexture { url "sontit.jpg"}
+							}
+						}
+				
+					]
+				}
+
+				Transform {
+					children Transform {
+						
+						
+						translation	0 0.71 0
+						children Shape {
+							geometry Extrusion {
+								crossSection [1.00	0.00
+											0.98	0.20
+											0.92	0.38
+											0.83	0.56
+											0.71	0.71
+											0.56	0.83
+											0.38	0.92
+											0.20	0.98
+											0.00	1.00
+											-0.20	0.98
+											-0.38	0.92
+											-0.56	0.83
+											-0.71	0.71
+											-0.83	0.56
+											-0.92	0.38
+											-0.98	0.20
+											-1.00	0.00
+											-0.98	-0.20
+											-0.92	-0.38
+											-0.83	-0.56
+											-0.71	-0.71
+											-0.56	-0.83
+											-0.38	-0.92
+											-0.20	-0.98
+											0.00	-1.00
+											0.20	-0.98
+											0.38	-0.92
+											0.56	-0.83
+											0.71	-0.71
+											0.83	-0.56
+											0.92	-0.38
+											0.98	-0.20
+											1	0]
+								spine [ 0 0 0 0 0.05 0  0 0.1 0  0 0.15 0 0 0.2 0]
+								scale [0.47 0.47  0.43 0.43 0.4 0.4 0.35 0.35 0.3 0.3 ]
+								solid FALSE
+							}
+							appearance Appearance {
+								material Material {
+									diffuseColor 0 0 0
+								}
+							}
+						}
+					}
+				}
+				
+			]
+		}
+#vai den cùi trỏ
+
+
+#tay phai
+
+
+Transform {
+			rotation 1 0 0 0
+			translation	0 2 0
+			children [
+				
+Transform{
+
+		  translation  0 -2 0
+		  
+		children[
+			
+Transform {
+			rotation 0 0 1 -0.1
+			translation	-0.9 2.1 0
+			children DEF left-hand Transform {
+				rotation 1 0 0 0.1
+				children [
+					Shape {
+						
+						geometry Sphere	{radius 0.3}
+						 appearance DEF mautay Appearance {
+							material Material {
+								diffuseColor .61 .61 .61
+								specularColor .77 .76 .76
+								ambientIntensity .14
+								shininess .9
+							}
+						}
+					}
+
+					Shape {
+						geometry Extrusion {
+							crossSection [1 0 , 0.94 -0.355,0.71 -0.71,0.355 -0.94
+								0 -1,-0.355 -0.94 ,-0.71 -0.71,	 -0.94 -0.355
+								-1 0 ,-0.94 0.355, -0.71 0.71,  -0.355 0.94
+								0 1 ,0.355 0.94, 0.71 0.71 , 0.94 0.355 ,1 0]
+							spine [0 0 0,0 -0.3 0,0 -1.25 0]
+							scale [0.3 0.3,0.25 0.25,0.2 0.25]
+						}
+						appearance USE mautay
+						
+					}
+					Transform {
+						scale 1 1 1.3
+						translation	0 -1.3 -0.02
+						children Shape {
+							
+							geometry Sphere {radius 0.19}
+							appearance USE mautay
+						}
+					}]}}
+# cang tay 
+Transform {
+				translation	-1 0.8 -0.12
+				  
+				children [
+					Transform {
+						
+						
+						children Shape {
+							geometry Extrusion {
+								crossSection [1 0 , 0.94 -0.355,0.71 -0.71,0.355 -0.94
+									0 -1,-0.355 -0.94 ,-0.71 -0.71,	 -0.94 -0.355
+									-1 0 ,-0.94 0.355, -0.71 0.71,  -0.355 0.94
+									0 1 ,0.355 0.94, 0.71 0.71 , 0.94 0.355 ,1 0]
+								spine [0 0 0,0 -0.2 0, 0 -1.75 0]
+								scale [0.2 0.25, 0.25 0.2,0.1 0.15]
+							}
+							appearance USE mautay
+						
+						}
+					}
+					Transform {
+						children [DEF bantay Transform {
+						
+						translation	0 0.2 0
+							children [
+								 
+								Transform {
+									translation	0 -2 0
+									children Shape {
+										geometry Sphere {radius 0.15}
+										appearance USE mautay
+									}
+								}
+								#ngontay
+								Transform {
+									rotation 0 0 1 0.8
+									translation	0.1 -2.1 0
+									children [DEF ngontay Shape {
+										geometry Cylinder {
+											height 0.2
+											radius 0.05}
+										appearance USE mautay
+									
+									}
+								]
+								}
+								Transform {
+									translation	0 -2.15 0
+									children [USE ngontay ]
+								}
+								Transform {
+									rotation 0 0 1 -0.8
+									translation	-0.1 -2.1 0
+									children [USE ngontay ]
+								}
+							]
+						}]
+					}
+				]} 
+# ban tay
+					
+					
+					]
+				}
+				]
+		}
+
+
+#tay trai
+DEF taytrai Transform {
+	
+	children [
+	DEF	taytrai1 Transform {
+			rotation 1 0 0 -1.4
+			translation	0.9 2.1 0
+			children DEF tay_trai Transform {
+				rotation 1 0 0 0.1
+				children [
+					Shape {
+						
+						geometry Sphere	{radius 0.3}
+						appearance USE mautay
+					}
+
+					#baptay
+					Shape {
+						geometry Extrusion {
+							crossSection [1 0 , 0.94 -0.355,0.71 -0.71,0.355 -0.94
+								0 -1,-0.355 -0.94 ,-0.71 -0.71,	 -0.94 -0.355
+								-1 0 ,-0.94 0.355, -0.71 0.71,  -0.355 0.94
+								0 1 ,0.355 0.94, 0.71 0.71 , 0.94 0.355 ,1 0]
+							spine [0 0 0,0 -0.3 0,0 -1.25 0]
+							scale [0.3 0.3,0.25 0.25,0.2 0.25]
+						}
+						appearance USE mautay
+						
+					}
+					Transform {
+						scale 1 1 1.3
+						translation	0 -1.25 -0.02
+						children Shape {
+							
+							geometry Sphere {radius 0.19}
+							appearance USE mautay
+						}
+					}
+
+					#cangtay
+					 DEF cangtay Transform {
+						translation	0 -1.25 0
+						rotation 1 0 0 -0.3
+						children [
+						DEF	cangtay1 Transform {
+							
+								children [
+								Shape {
+							geometry Extrusion {
+								crossSection [1 0 , 0.94 -0.355,0.71 -0.71,0.355 -0.94
+									0 -1,-0.355 -0.94 ,-0.71 -0.71,	 -0.94 -0.355
+									-1 0 ,-0.94 0.355, -0.71 0.71,  -0.355 0.94
+									0 1 ,0.355 0.94, 0.71 0.71 , 0.94 0.355 ,1 0]
+								spine [0 0 0,0 -0.2 0, 0 -1.75 0]
+								scale [0.2 0.25, 0.25 0.2,0.1 0.15]
+							}
+							appearance USE mautay
+						
+						}
+					  #bantay
+						Transform {
+							children [USE bantay 
+							
+							DEF bia Transform {
+								scale 0.15 0.15 0.15
+								rotation 1 0 0 1.57
+								translation	0 -2 0
+								children [
+										Inline {url "bia1.wrl"}
+								]
+							}
+							]
+						}
+					]
+							}
+						
+					]
+					}
+				
+
+				]}
+					
+				}
+	
+	]
+		}
+
+
+##### hong
+
+Transform {
+			children Shape {
+				geometry Extrusion {
+					crossSection [1 0 , 0.94 -0.355,0.71 -0.71,0.355 -0.94
+						0 -1,-0.355 -0.94 ,-0.71 -0.71,	 -0.94 -0.355
+						-1 0 ,-0.94 0.355, -0.71 0.71,  -0.355 0.94
+						0 1 ,0.355 0.94, 0.71 0.71 , 0.94 0.355 ,1 0]
+
+					spine [0 0 0,0 -0.05 0,0 -0.1 0,0 -0.15 0,0 -0.2 0,0 -0.25 0,0 -0.3 0, 0 -0.35 0]
+					scale [0.8 0.4, 0.8 0.39,0.78 0.38,0.7 0.35,0.6 0.31,0.47 0.2,0.2 0.1,0 0]
+				}
+				appearance DEF black Appearance {
+					material Material {
+						diffuseColor 0 0 0
+					}
+				}
+			}
+		}
+		#Chân
+		Transform {
+			rotation 1 0 0 -1.6
+			translation	0.4 -0.2 0
+			children DEF chan_trai Transform {	
+				children [
+					#Đùi
+					Transform {
+						rotation 1 0 0 -0.05
+						children [
+							Shape {
+								geometry Sphere	{radius 0.4}
+								appearance  Appearance {
+									material Material {
+										diffuseColor 0 0 0
+									}
+								}
+							}
+							Transform {
+								children Shape {
+									geometry Extrusion {
+										crossSection [1 0 , 0.94 -0.355,0.71 -0.71,0.355 -0.94
+											0 -1,-0.355 -0.94 ,-0.71 -0.71,	 -0.94 -0.355
+											-1 0 ,-0.94 0.355, -0.71 0.71,  -0.355 0.94
+											0 1 ,0.355 0.94, 0.71 0.71 , 0.94 0.355 ,1 0]
+
+										spine [0 0 0, 0 -1.5 0]
+										scale [0.4 0.4,0.3 0.3]
+									}
+									appearance Appearance {
+										material Material {
+											diffuseColor 0 0 0
+										}
+									}
+								}
+							}
+							Transform {
+								translation	0 -1.5 0
+								children Shape {
+									geometry Sphere	{radius 0.3}
+									appearance  Appearance {
+										material Material {
+											diffuseColor 0 0 0
+										}
+									}
+								}
+							}
+						]
+					}
+					#cẳng
+					Transform {
+						translation	0 -1.6 0
+						rotation 1 0 0 1.4
+						children[ Transform {
+							rotation 1 0 0 0.1
+							translation	0 0 0.1
+							children[
+			    				Shape {
+									geometry Extrusion {
+										crossSection [1 0 , 0.94 -0.355,0.71 -0.71,0.355 -0.94
+											0 -1,-0.355 -0.94 ,-0.71 -0.71,	 -0.94 -0.355
+											-1 0 ,-0.94 0.355, -0.71 0.71,  -0.355 0.94
+											0 1 ,0.355 0.94, 0.71 0.71 , 0.94 0.355 ,1 0]
+
+										spine [0 0 0,0 -0.5 0 0 -2 0]
+										scale [0.25 0.25, 0.3 0.3,0.15 0.15]
+									}
+									appearance Appearance {
+										material Material {
+											diffuseColor 0 0 0
+										}
+									}
+								}
+							]
+						}
+					 Transform {
+						translation	0 -2.2 -0.25
+						scale 1.5 1.5 1.5
+						rotation 1 0 0 -1.57
+						children [Shape {
+							geometry Extrusion {
+								crossSection	[0 -0.1,0.5 -0.1,0.45 0.03,0.4 0.04,0.35,0.05,0.3 0.08,0.25 0.1,0.2 0.2,0 0.2,0 -0.1]
+								spine [-0.1 0 0,0.1 0 0]
+							}
+							appearance Appearance {
+								material Material {
+									diffuseColor 0 0 0
+								}
+							}
+						} 
+					
+					]
+					}
+					
+					]
+			
+					}
+					
+				]
+			}
+		}
+
+		#chanphai
+		Transform {
+			rotation 1 0 0 -1.6
+			translation	-0.4 -0.2 0
+			children DEF chan_phai Transform {
+				children [
+					#Đùi
+					Transform {
+						rotation 1 0 0 -0.05
+						children [
+							Shape {
+								geometry Sphere	{radius 0.4}
+								appearance  Appearance {
+									material Material {
+										diffuseColor 0 0 0
+									}
+								}
+							}
+							Transform {
+								children Shape {
+									geometry Extrusion {
+										crossSection [1 0 , 0.94 -0.355,0.71 -0.71,0.355 -0.94
+											0 -1,-0.355 -0.94 ,-0.71 -0.71,	 -0.94 -0.355
+											-1 0 ,-0.94 0.355, -0.71 0.71,  -0.355 0.94
+											0 1 ,0.355 0.94, 0.71 0.71 , 0.94 0.355 ,1 0]
+
+										spine [0 0 0, 0 -1.5 0]
+										scale [0.4 0.4,0.3 0.3]
+									}
+									appearance Appearance {
+										material Material {
+											diffuseColor 0 0 0
+										}
+									}
+								}
+							}
+							Transform {
+								translation	0 -1.5 0
+								children Shape {
+									geometry Sphere	{radius 0.3}
+									appearance  Appearance {
+										material Material {
+											diffuseColor 0 0 0
+										}
+									}
+								}
+							}
+						]
+					}
+					#cẳng
+					Transform {
+						 	rotation 1 0 0 1.4
+						translation	0 -1.6 0
+						children [Transform {
+							rotation 1 0 0 0.1
+							translation	0 0 0.1
+							children[
+			    				Shape {
+									geometry Extrusion {
+										crossSection [1 0 , 0.94 -0.355,0.71 -0.71,0.355 -0.94
+											0 -1,-0.355 -0.94 ,-0.71 -0.71,	 -0.94 -0.355
+											-1 0 ,-0.94 0.355, -0.71 0.71,  -0.355 0.94
+											0 1 ,0.355 0.94, 0.71 0.71 , 0.94 0.355 ,1 0]
+
+										spine [0 0 0,0 -0.5 0 0 -2 0]
+										scale [0.25 0.25, 0.3 0.3,0.15 0.15]
+									}
+									appearance Appearance {
+										material Material {
+											diffuseColor 0 0 0
+										}
+									}
+								}
+							]
+						} 
+					
+					 Transform {
+						translation	0 -2.2 -0.25
+						scale 1.5 1.5 1.5
+						rotation 1 0 0 -1.57
+						children Shape {
+							geometry Extrusion {
+								crossSection	[0 -0.1,0.5 -0.1,0.45 0.03,0.4 0.04,0.35,0.05,0.3 0.08,0.25 0.1,0.2 0.2,0 0.2,0 -0.1]
+								spine [-0.1 0 0,0.1 0 0]
+							}
+							appearance Appearance {
+								material Material {
+									diffuseColor 0 0 0
+								}
+							}
+						}
+					}
+					]
+			
+					}
+					
+				]
+			}
+		}
+]} 
+  
+DEF thoigian1 TimeSensor {
+	enabled	TRUE
+	loop TRUE
+	cycleInterval 10
+}
+DEF thoigianuong TimeSensor {
+	enabled TRUE
+	loop FALSE
+	cycleInterval 5
+}
+DEF	tayxoay OrientationInterpolator	{
+	key	[0 0.2 ]
+	keyValue [0 1 0 0  0 1 0 -0.23 ]
+}
+
+DEF	canhtayxoay OrientationInterpolator	{
+	key	[0.2 0.4]
+	keyValue [1 0 0 -1.4  1 0 0 -0.8]
+}
+
+DEF	cangtayxoay OrientationInterpolator	{
+	key	[0.2 0.4]
+	keyValue [1 0 0 -0.3  1 0 0 -2.4]
+}
+
+
+DEF	cangtayxoay1 OrientationInterpolator	{
+	key	[0.2 0.4]
+	keyValue [0 0 0 0.  0 0 1 -0.5]
+}
+DEF ma Script {
+
+eventIn SFBool  turnOn
+
+eventOut SFBool On
+
+eventOut SFBool Off
+
+field SFBool turn FALSE
+
+url "javascript:
+
+function turnOn(val){
+
+if(val){
+
+turn = !turn;
+
+if(turn)
+
+{
+
+On= TRUE;
+
+                        Off=FALSE;
+
+            }
+
+        else
+
+        {
+
+                        On=FALSE;
+
+Off=TRUE;
+
+        }
+
+            }
+
+    }
+
+    "
+}
+
+
+
+ROUTE  touch1.isActive TO ma.turnOn
+ROUTE ma.On	TO thoigian1.enabled
+ROUTE touch1.touchTime TO thoigian1.startTime
+ROUTE thoigian1.fraction_changed	TO tayxoay.set_fraction
+ROUTE tayxoay.value_changed TO taytrai.rotation
+
+
+ROUTE thoigian1.fraction_changed	TO canhtayxoay.set_fraction
+ROUTE thoigian1.fraction_changed	TO cangtayxoay.set_fraction
+ROUTE thoigian1.fraction_changed	TO cangtayxoay1.set_fraction
+
+ROUTE canhtayxoay.value_changed TO taytrai1.rotation
+ROUTE cangtayxoay.value_changed TO cangtay.rotation
+ROUTE cangtayxoay1.value_changed TO cangtay1.rotation
+
+

@@ -1,0 +1,97 @@
+#VRML V2.0 utf8
+
+
+Transform {
+	children	[
+		  DEF left Transform {
+		   translation -1 0 0
+  
+		   children	[
+   
+    		   Transform	{
+				   translation	1 0 0 
+
+	    		   children [
+		        		DEF	cuatrai Shape	{
+						geometry Box {size 2 4 0.2}
+			
+			 			appearance Appearance {
+				   
+							material	NULL
+				   			texture	ImageTexture {
+							  repeatS TRUE
+							  repeatT TRUE
+							  url "F:\môn học\Kì 2 năm 3\thực tại ảo\Main BTL TTA\image\vango.jpg"
+							}
+						}
+						}
+				   ]
+			   }
+			   DEF	cilinderSenSor CylinderSensor {
+    			enabled TRUE
+
+				offset 0
+
+				autoOffset TRUE
+
+				maxAngle  0
+
+				minAngle -3.14
+
+				diskAngle 0.262
+
+
+		}
+   ]
+}
+	]
+}
+
+
+DEF right Transform {
+   translation 3 0 0 
+   children	[
+	    Transform	{
+		   translation -1 0 0
+	       children [
+		        DEF	cuaphai Shape	{
+			geometry Box {size 2 4 0.2}
+			appearance Appearance {
+				   
+					material	NULL
+				   	texture	ImageTexture {
+					  repeatS TRUE
+					  repeatT TRUE
+					  url "F:\môn học\Kì 2 năm 3\thực tại ảo\Main BTL TTA\image\vango.jpg"
+					}
+				}
+		}
+		   ]
+	   }
+		 DEF cuaphaixoay CylinderSensor {
+    	enabled TRUE
+
+		offset 0
+
+		autoOffset TRUE
+
+		maxAngle  3.14
+
+		minAngle 0
+
+		diskAngle 0.262
+
+
+}
+		DEF timeer1 TimeSensor {
+		  cycleInterval	5
+		  loop TRUE
+		  enabled TRUE
+		}
+   ]
+}
+
+ROUTE cilinderSenSor.rotation_changed TO left.rotation
+ROUTE cuaphaixoay.rotation_changed TO right.rotation
+
+

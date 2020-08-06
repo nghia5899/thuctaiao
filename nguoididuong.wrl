@@ -1,0 +1,192 @@
+#VRML V2.0 utf8
+DEF nguoi Transform {
+	rotation 0 1 0 1.57
+    children [
+	     
+DEF	thannguoi Shape	{
+	geometry	Box	{size 2 3 1.2 }
+	appearance Appearance {
+		material Material {
+			diffuseColor .88 .32 .2
+			specularColor .82 .28 .28
+			ambientIntensity .113
+			shininess .8
+		}
+	}
+}
+DEF taytrai Transform {
+    children [
+	    Transform {
+			translation	-1.2 0 0
+			children	[
+			         DEF tay Shape {
+							geometry Cylinder{
+
+							height 2.0
+
+							radius 0.3
+
+							bottom TRUE
+
+							top TRUE
+
+							side TRUE
+
+						}
+
+
+					}
+			]
+		}
+	]
+}
+DEF tayphai Transform {
+    children [
+	    Transform {
+			translation	1.2 0 0
+			children	[
+			         USE tay
+			]
+		}
+	]
+}
+DEF co Transform {
+    children [
+	    Transform {
+			translation	0 1.7 0
+			scale 0.7 0.2 0.7
+			children	[
+			         USE tay
+			]
+		}
+	]
+}
+DEF	dau Transform {
+	translation	0 2.5 0
+	children	[
+	           Shape {
+
+				geometry Sphere {
+
+				   radius 0.7
+
+				  }
+				appearance Appearance {
+					material Material {
+						diffuseColor .52 .32 .25
+						specularColor .53 .53 .53
+						ambientIntensity .0867
+						shininess .93
+					}
+				}
+
+				}
+
+				Transform	{
+					translation	-0.2 0 0.7
+				    children [
+					         DEF mat Shape {
+
+									geometry Sphere {
+
+									   radius 0.1
+
+									  }
+					
+
+							}
+						
+					]
+				}
+					Transform	{
+					translation	0.2 0 0.7
+				    children [
+					        USE	mat
+						
+					]
+				}
+					Transform	{
+					translation	0 -0.5 0.5
+				    children [
+					       
+						USE	mat
+					]
+				}
+	]
+}
+DEF	chantrai Transform {
+	scale 1.3 1.3 1.3
+	translation	-0.5 -2.7 0
+	children	[
+		USE tay
+		Transform {
+			translation	0 -1 0.2
+			children	[
+			        	  DEF	banchan Shape {
+
+							geometry	Box	{size 0.5 0.1 1}
+							appearance Appearance {
+								material Material {
+									diffuseColor 0 0 0
+									specularColor .29 .3 .29
+									ambientIntensity 0
+									shininess .08
+								}
+							}
+					}
+			]
+		}
+	]
+}
+DEF	chanphai Transform {
+	scale 1.3 1.3 1.3
+	translation	0.5 -2.7 0
+	children	[
+		USE tay
+			Transform {
+			translation	0 -1 0.2
+			children	[
+			        	  USE banchan
+					
+			]
+		}
+	]
+}
+	]
+}
+DEF	T1 TimeSensor {
+   cycleInterval 3
+   enabled TRUE
+   loop	TRUE
+}
+DEF	T2 TimeSensor {
+   cycleInterval 20
+   enabled TRUE
+   loop	TRUE
+}
+DEF	xoayChantrai OrientationInterpolator {
+  key [0 0.5 1]
+  keyValue [1 0 0 -0.2  , 1 0 0 0.2 ,1 0 0 -0.2]
+}
+DEF	xoayChanPhai OrientationInterpolator {
+  key [0 0.5 1]
+  keyValue [ 1 0 0 0.2,1 0 0 0  ,  ,1 0 0 0.2]
+}
+DEF	p1 PositionInterpolator	{
+	key [ 0 1]
+	keyValue [ -30 0 0 , 30 0  0  ]
+}
+ROUTE T1.fraction_changed TO xoayChantrai.set_fraction
+ROUTE xoayChantrai.value_changed  TO chantrai.rotation
+
+ROUTE T1.fraction_changed TO xoayChantrai.set_fraction
+ROUTE xoayChantrai.value_changed  TO tayphai.rotation
+
+ROUTE T1.fraction_changed TO xoayChanPhai.set_fraction
+ROUTE xoayChanPhai.value_changed  TO chanphai.rotation
+
+ROUTE T1.fraction_changed TO xoayChanPhai.set_fraction
+ROUTE xoayChanPhai.value_changed  TO taytrai.rotation	 
+
+#ROUTE T2.fraction_changed  TO	  p1.set_fraction
+#ROUTE p1.value_changed TO nguoi.translation

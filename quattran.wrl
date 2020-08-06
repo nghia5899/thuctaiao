@@ -1,0 +1,99 @@
+#VRML V2.0 utf8
+
+Group {	children [
+DEF quattran Transform	{ children	[
+
+Shape {
+	geometry Sphere	{radius .05}
+	appearance Appearance {
+			material Material {
+				ambientIntensity 0
+				shininess 0
+			}
+	}
+}
+Transform {
+scale 1 .2 1
+children [
+	Shape {
+		geometry Sphere	{radius .1}
+		appearance Appearance {
+			material Material {
+				ambientIntensity 0
+				shininess 0
+			}
+		}
+	}
+]
+}
+Transform {
+	 translation 0 0 .355
+	 children [
+		Shape {
+		geometry Box {
+		size .15 .005 .5
+		}
+		appearance Appearance {
+			material Material {
+				ambientIntensity 0
+				shininess 0
+			}
+			}
+		}
+	 ]
+}
+Transform {
+	rotation 0 1 0 2.09
+	translation	.31 0 -.17
+	children [	
+		Shape {
+		geometry Box {
+		size .15 .005 .5
+		}
+		appearance Appearance {
+			material Material {
+				ambientIntensity 0
+				shininess 0
+			}
+			}
+		}
+	]
+}
+Transform {
+	rotation 0 1 0 4.18
+	translation	-.31 0 -.17
+	children [	
+		Shape {
+		geometry Box {
+		size .15 .005 .5
+		}
+		appearance Appearance {
+			material Material {
+				ambientIntensity 0
+				shininess 0
+			}
+			}
+		}
+	]
+}
+]}
+DEF	T1 TouchSensor {}
+DEF	T2 TouchSensor {}
+]}
+
+DEF	TS TimeSensor {	
+	startTime 0
+	stopTime 500
+	loop TRUE
+	}
+DEF OI OrientationInterpolator {
+    key [ 0, 0.33, 0.66, 1.0 ]
+    keyValue [ 0 1 0 0, 0 1 0 2.09,
+	       0 1 0 4.18, 0 1 0 6.28 ]
+  }
+
+#ROUTE T1.touchTime TO TS.startTime
+#ROUTE TS.fraction_changed TO OI.set_fraction
+#ROUTE OI.value_changed TO quattran.rotation
+
+#ROUTE T2.touchTime TO TS.stopTime

@@ -1,0 +1,139 @@
+#VRML V2.0 utf8
+
+DEF cuatrai Transform {
+	translation	-1.76 0 0
+	children [DEF cua Transform {
+	translation	 0 0 -0.05
+	#1.75 5 0.1
+	children [
+
+		Transform {
+			translation	0.125 2.5 0
+
+			children [
+				DEF	thanhdaidoc Shape {
+
+				geometry Box {size 0.25  5 0.1 }
+				appearance DEF  maucua Appearance {
+					material Material {
+						diffuseColor .35 .16 .12
+						specularColor .21 .11 0
+						ambientIntensity .0533
+						shininess .05
+					}
+				}
+				}]
+		}
+		Transform {
+			translation	 1.625 2.5 0
+			children [USE thanhdaidoc]
+		}
+		Transform {
+			translation	 0.875 0.5 0
+			children [
+			DEF	thanhduoi Shape {
+					appearance USE maucua
+					geometry Box {size 1.25  1 0.1 }
+				}]
+		}
+		Transform {
+			translation	 0.875 4.75 0
+			children [
+			DEF	thanhtren Shape {
+					appearance USE maucua
+					geometry Box {size 1.25  0.5 0.1 }
+				}]
+		}
+		#kinh
+		Transform {
+			translation	 0.875 2.75 0
+			children [
+				Shape {
+					
+					geometry Box {size 1.25 3.5 0.05 }
+					appearance Appearance {
+						material Material {
+							ambientIntensity 0
+							transparency .569
+							diffuseColor .651 .8 .8
+						}
+					}
+				}]
+		}
+		
+	]
+}
+	DEF	cb CylinderSensor {
+		enabled	TRUE
+		maxAngle 0
+		minAngle -1.57
+	}	
+	]
+
+	ROUTE cb.rotation_changed TO cuatrai.rotation
+}
+DEF cuaphai Transform {
+	translation	1.75 0 0
+	children [DEF cua1 Transform {
+	translation	 0 0 -0.05
+	#1.75 5 0.1
+	children [
+
+		Transform {
+			translation	-0.125 2.5 0
+
+			children [USE thanhdaidoc ]
+		}
+		Transform {
+			translation	 -1.625 2.5 0
+			children [USE thanhdaidoc]
+		}
+		Transform {
+			translation	 -0.875 0.5 0
+			children [USE thanhduoi ]
+		}
+		Transform {
+			translation	 -0.875 4.75 0
+			children [USE thanhtren ]
+		}
+		#kinh
+		Transform {
+			translation	 -0.875 2.75 0
+			children [
+				Shape {
+					
+					geometry Box {size 1.25 3.5 0.05 }
+					appearance Appearance {
+						material Material {
+							ambientIntensity 0
+							transparency .569
+							diffuseColor .651 .8 .8
+						}
+					}
+				}]
+		}
+		
+	]
+}
+	DEF	cb CylinderSensor {
+		enabled	TRUE
+		maxAngle 1.57
+		minAngle 0
+	}	
+	]
+
+	ROUTE cb.rotation_changed TO cuaphai.rotation
+}
+
+
+DEF cuatrai1 Transform {
+	translation	-3.52 0 0
+	children [USE cua ]
+
+}
+DEF cuaphai1 Transform {
+	translation	1.76 0 0
+	children [USE cua ]
+
+}
+

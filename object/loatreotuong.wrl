@@ -1,0 +1,59 @@
+#VRML V2.0 utf8
+#loa
+DEF	loaa Transform {
+
+  children [
+  
+	   DEF	loa Transform {
+	
+	
+	children [
+	
+	
+	           DEF	loatreotuong Shape {
+	geometry	Box{size 1.5 1 1}
+	appearance Appearance {
+	    texture ImageTexture {
+
+				url "F:\môn học\Kì 2 năm 3\thực tại ảo\Main BTL TTA\image\vango.jpg"
+
+				repeatS TRUE
+
+				repeatT TRUE
+
+				}
+	}
+}
+#mặt loa
+Transform {
+	translation	0 0 0.525
+	children	[
+	
+	    		  DEF	matloa Shape {
+			appearance Appearance {
+				material Material {
+					diffuseColor 0 0 0
+					specularColor .63 .92 1
+					ambientIntensity 0
+				}
+				 texture ImageTexture {
+
+				url "F:\môn học\Kì 2 năm 3\thực tại ảo\Main BTL TTA\image\loa.jpg"
+
+				repeatS TRUE
+
+				repeatT TRUE
+
+				}
+			
+	
+			}
+			geometry	Box{size 1.5 1 0.05}
+		}
+	]
+}
+	]
+ 
+}
+  ]
+}

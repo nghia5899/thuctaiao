@@ -1,0 +1,73 @@
+#VRML V2.0 utf8
+
+Transform {
+	children [
+		Shape {
+			geometry Box {size 3 4 0.2}
+			appearance DEF mautuongnha Appearance {
+							material Material {
+								diffuseColor 1 .933 .176
+								specularColor .87 .25 .25
+								ambientIntensity .157
+								shininess 1
+							}
+						}
+		}
+	]
+}
+Transform {
+	translation	1.4	 0 -4.85
+	children [
+		Shape {
+			geometry Box {size 0.2 4 6}
+			appearance USE mautuongnha
+		}
+	]
+}
+Transform {
+	translation	0 2.1 -3.875 
+	children [
+		Shape {
+			geometry Box {size 3 0.2 7.95}
+			appearance USE mautuongnha
+		}
+	]
+}
+DEF canhcua Transform {
+	translation	1.45 0 -0.1
+	children [
+		Transform {
+			translation	 0.05 0 -0.875
+			children [
+				Shape {
+				geometry Box {size 0.1 4 1.75}
+				appearance Appearance {
+					material Material {
+						diffuseColor .35 .16 .12
+						specularColor .21 .11 0
+						ambientIntensity .0533
+						shininess .05
+					}
+				}
+					}
+			]
+		
+		}
+
+	]
+} DEF	cb CylinderSensor {
+		enabled	TRUE
+		maxAngle 1.57
+		minAngle 0
+	}
+
+
+	Transform {
+		scale 0.4 0.6 0.4
+		translation	0 -2 -5
+		children [
+
+			Inline {url "boncau.wrl"}
+		]
+	}
+ROUTE cb.rotation_changed TO canhcua.rotation

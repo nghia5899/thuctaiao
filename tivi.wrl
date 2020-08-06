@@ -1,0 +1,81 @@
+#VRML V2.0 utf8
+
+#tivi
+Transform {
+    children [
+	         
+			  DEF	tivi Shape {
+				geometry	Box	{
+				   size	5 3.75 0.05
+	   
+				}
+				appearance  Appearance {
+	    			 texture MovieTexture {
+
+                        			url "F:\môn học\Kì 2 năm 3\thực tại ảo\Main BTL TTA\video\Anime1.mpg"
+
+                        			loop TRUE
+
+                        			}
+
+
+	}
+}
+	  # mặt sau tivi
+Transform {
+	translation	0 0 -0.025
+	children [
+	
+			   DEF	matsautivi Shape {
+
+			geometry	Box	{
+			   size	5 3.75 0.02
+	   
+			}
+			appearance Appearance {
+				material Material {
+					diffuseColor 0 0 0
+					specularColor .5 .5 .5
+					emissiveColor .15 .15 .15
+					ambientIntensity 0
+				}
+			}
+	
+		}
+	]
+}
+# mặt trước tivi
+Transform {
+	translation	-2.5 0 0.0001
+	children [
+	
+			   DEF	mattruocleft Shape {
+
+			geometry	Box	{
+			   size	0.1 3.75 0.05
+	   
+			}
+			appearance Appearance {
+				material Material {
+					diffuseColor 0 0 0
+					specularColor .63 .92 1
+					ambientIntensity 0
+				}
+				
+			 
+			}
+	
+		}
+	]
+}
+Transform {
+	translation	2.5 0 0.0001
+	children [
+			  
+	
+		USE	mattruocleft
+	]
+}
+	]
+
+}

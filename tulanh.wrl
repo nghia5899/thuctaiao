@@ -1,0 +1,328 @@
+#VRML V2.0 utf8
+
+DEF	thantulanh Transform {
+	translation	4.1 0 2
+	children	[
+	    Shape {
+			
+			geometry	Extrusion  {
+				
+				crossSection	[ 3 -2 ,-3 -2, -3 2 ,3 2,3 -2]
+				spine [0 0 0 , 0 4 0 ]
+				scale [ 1 1 , 1 1 ]
+				solid FALSE
+				beginCap TRUE
+				endCap FALSE
+			}
+			appearance Appearance {
+				material Material {
+				
+					
+				}
+				texture	ImageTexture {
+				   url "votulanh.jpg"
+				   repeatS TRUE
+				   repeatT TRUE	
+				}
+			
+			}
+			
+		}
+		Transform {
+			translation	0 2.05 2.05
+			children	[
+			    		Shape {
+					geometry	 Box {size 6 4 0.1 }
+					appearance Appearance {
+					   material	NULL
+					   texture ImageTexture	{
+			    		 url  "mattulanh.jpg"
+						 repeatS TRUE
+						 repeatT TRUE
+
+					   }
+					}
+				}
+			]
+		}
+	 
+	]
+
+}
+
+
+Transform	{
+	translation	0 4.1 0
+	rotation 0 0 1 -1.57
+	children	[ 
+	       DEF	naptulanh Transform {
+				translation	0 4.1 0
+				children	[
+	    			Transform {
+						translation	0 0 2
+					    children [
+							Transform {
+								rotation 0 0 1 1.57
+								children	[
+								
+								
+								     
+						        			   Shape {
+			
+		    						geometry Box {size 6 0.2 4}
+									appearance Appearance {
+											material Material {
+												diffuseColor .671 .8 .8
+												ambientIntensity 0
+												shininess 0
+												transparency .239
+											}
+											texture	ImageTexture {
+											   url "votulanh.jpg"
+											   repeatS TRUE
+											   repeatT TRUE	
+											}
+			
+										}
+								}
+								]
+							
+							}
+	 
+						]
+					}
+					DEF	cylindermotu CylinderSensor	{
+						  autoOffset TRUE
+						  enabled TRUE
+						  offset 0
+						  minAngle -1.57
+						  maxAngle 0
+						  diskAngle	0.2356
+			  
+			}
+				]
+
+			}
+	]
+
+}	
+Transform {
+	scale 2.5 2.5 2.5
+	translation	1.5 0 2
+	children	[
+	    Inline	{
+		  url "chailavie.wrl"
+		  bboxCenter 0 0 0
+		  bboxSize -1 -1 -1
+		}  
+	
+	]
+}
+Transform {
+	scale 2.5 2.5 2.5
+	translation	2.5 0 2
+	children	[
+	    Inline	{
+		  url "chailavie.wrl"
+		  bboxCenter 0 0 0
+		  bboxSize -1 -1 -1
+		}  
+	
+	]
+}
+Transform {
+	scale 2.5 2.5 2.5
+	translation	3.5 0 2
+	children	[
+	    Inline	{
+		  url "chailavie.wrl"
+		  bboxCenter 0 0 0
+		  bboxSize -1 -1 -1
+		}  
+	
+	]
+}			
+Transform {
+	scale 2.5 2.5 2.5
+	translation	4.5 0 2
+	children	[
+	    Inline	{
+		  url "chailavie.wrl"
+		  bboxCenter 0 0 0
+		  bboxSize -1 -1 -1
+		}  
+	
+	]
+}			
+Transform {
+	scale 2.5 2.5 2.5
+	translation	5.5 0 2
+	children	[
+	    Inline	{
+		  url "chailavie.wrl"
+		  bboxCenter 0 0 0
+		  bboxSize -1 -1 -1
+		}  
+	
+	]
+}			
+Transform {
+	scale 2.5 2.5 2.5
+	translation	6.5 0 2
+	children	[
+	    Inline	{
+		  url "chailavie.wrl"
+		  bboxCenter 0 0 0
+		  bboxSize -1 -1 -1
+		}  
+	
+	]
+}
+
+# hang
+Transform {
+	scale 2.5 2.5 2.5
+	translation	1.5 0 1
+	children	[
+	    Inline	{
+		  url "chailavie.wrl"
+		  bboxCenter 0 0 0
+		  bboxSize -1 -1 -1
+		}  
+	
+	]
+}
+Transform {
+	scale 2.5 2.5 2.5
+	translation	2.5 0 1
+	children	[
+	    Inline	{
+		  url "chailavie.wrl"
+		  bboxCenter 0 0 0
+		  bboxSize -1 -1 -1
+		}  
+	
+	]
+}
+Transform {
+	scale 2.5 2.5 2.5
+	translation	3.5 0 1
+	children	[
+	    Inline	{
+		  url "chailavie.wrl"
+		  bboxCenter 0 0 0
+		  bboxSize -1 -1 -1
+		}  
+	
+	]
+}			
+Transform {
+	scale 2.5 2.5 2.5
+	translation	4.5 0 1
+	children	[
+	    Inline	{
+		  url "chailavie.wrl"
+		  bboxCenter 0 0 0
+		  bboxSize -1 -1 -1
+		}  
+	
+	]
+}			
+Transform {
+scale 2.5 2.5 2.5
+	translation	5.5 0 1
+	children	[
+	    Inline	{
+		  url "chailavie.wrl"
+		  bboxCenter 0 0 0
+		  bboxSize -1 -1 -1
+		}  
+	
+	]
+}			
+Transform {
+	scale 2.5 2.5 2.5
+	translation	6.5 0 1
+	children	[
+	    Inline	{
+		  url "chailavie.wrl"
+		  bboxCenter 0 0 0
+		  bboxSize -1 -1 -1
+		}  
+	
+	]
+}				
+#hang 
+Transform {
+	scale 2.5 2.5 2.5
+	translation	1.5 0 3
+	children	[
+	    Inline	{
+		  url "chailavie.wrl"
+		  bboxCenter 0 0 0
+		  bboxSize -1 -1 -1
+		}  
+	
+	]
+}
+Transform {
+	scale 2.5 2.5 2.5
+	translation	2.5 0 3
+	children	[
+	    Inline	{
+		  url "chailavie.wrl"
+		  bboxCenter 0 0 0
+		  bboxSize -1 -1 -1
+		}  
+	
+	]
+}
+Transform {
+	scale 2.5 2.5 2.5
+	translation	3.5 0 3
+	children	[
+	    Inline	{
+		  url "chailavie.wrl"
+		  bboxCenter 0 0 0
+		  bboxSize -1 -1 -1
+		}  
+	
+	]
+}			
+Transform {
+	scale 2.5 2.5 2.5
+	translation	4.5 0 3
+	children	[
+	    Inline	{
+		  url "chailavie.wrl"
+		  bboxCenter 0 0 0
+		  bboxSize -1 -1 -1
+		}  
+	
+	]
+}			
+Transform {
+	scale 2.5 2.5 2.5
+	translation	5.5 0 3
+	children	[
+	    Inline	{
+		  url "chailavie.wrl"
+		  bboxCenter 0 0 0
+		  bboxSize -1 -1 -1
+		}  
+	
+	]
+}			
+Transform {
+	scale 2.5 2.5 2.5
+	translation	6.5 0 3
+	children	[
+	    Inline	{
+		  url "chailavie.wrl"
+		  bboxCenter 0 0 0
+		  bboxSize -1 -1 -1
+		}  
+	
+	]
+}								
+ROUTE cylindermotu.rotation_changed	 TO	naptulanh.rotation

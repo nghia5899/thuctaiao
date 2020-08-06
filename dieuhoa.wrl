@@ -1,0 +1,274 @@
+#VRML V2.0 utf8
+
+Transform {
+	children [
+		Shape {
+
+			geometry Box {
+				size 2 1 0.6
+			}
+			appearance DEF mau Appearance {
+				material Material {
+					ambientIntensity 0
+					shininess 0
+				}
+			}
+		}
+	]
+}
+Transform {
+	translation	0 0.15 0.35
+	children [
+		Shape {
+			appearance USE mau
+			geometry Box {
+				size 2 0.7 0.1
+			}
+		}
+	]
+}
+Transform {
+	translation	0 -0.45 0.35
+	children [
+		Shape {
+			appearance USE mau
+			geometry Box {
+				size 2 0.1 0.1
+			}
+		}
+	]
+}
+Transform {
+	translation	-0.95 -0.3 0.35
+	children [
+		Shape {
+			appearance USE mau
+			geometry Box {
+				size 0.1 0.2 0.1
+			}
+		}
+	]
+}
+Transform {
+	translation	0.95 -0.3 0.35
+	children [
+		Shape {
+			appearance USE mau
+			geometry Box {
+				size 0.1 0.2 0.1
+			}
+		}
+	]
+}
+Transform {
+	translation	-0.95 -0.3 0.35
+	children [
+		Shape {
+			appearance USE mau
+			geometry Box {
+				size 0.1 0.2 0.1
+			}
+		}
+	]
+}
+Transform {
+	translation	0.8 0 0.3975
+	children [
+		Shape {
+			appearance Appearance {
+				material Material {}
+				texture	ImageTexture {
+					url "dieuhoatem.jpg"
+					repeatS	TRUE
+					repeatT	TRUE
+					
+				}
+			}
+			geometry Box {
+				size 0.2 0.2 0.05
+			}
+
+		}
+	]
+}
+Transform {
+	translation	0 0.3 0.3975
+	children [
+		Shape {
+			appearance Appearance {
+				material Material {}
+				texture	ImageTexture {
+					url "inverter.jpg"
+					repeatS	TRUE
+					repeatT	TRUE
+					
+				}
+			}
+			geometry Box {
+				size 1 0.2 0.05
+			}
+
+		}
+	]
+}
+
+ 
+ DEF cuadieuhoa Transform {
+	translation	 0 -0.2 0.3975
+	rotation 1 0 0 0
+	children [
+		Transform {
+		translation	0 -0.1 0
+		children [
+		Shape {
+			appearance USE mau
+			geometry Box {
+				size 1.78 0.2 0.05
+			}
+		}
+
+		DEF	thoigianmo TimeSensor	{
+				cycleInterval 3
+				
+				enabled	FALSE
+				startTime 0
+				stopTime 3
+			}
+			DEF	thoigiandong TimeSensor	{
+				cycleInterval 3
+				
+				enabled	FALSE
+				startTime 0
+				stopTime 3
+			}
+			
+			DEF	cuaquay OrientationInterpolator	{
+				key	[0 1]
+				keyValue [0 0 0 0  1 0 0 -1 ]
+			}
+			DEF	cuadong OrientationInterpolator	{
+				key	[0 1]
+				keyValue [ 1 0 0 -1  0 0 0 0 ]
+			}											  
+
+			DEF ma Script {
+
+				eventIn SFBool turnOn
+
+				eventOut SFBool On
+
+				eventOut SFBool Off
+
+				field SFBool turn FALSE
+				#val luon luon bang true
+
+				url "javascript:
+
+				function turnOn(val){
+
+				if(val){
+				
+
+				turn = !turn;
+
+				if(turn)
+
+				{
+
+				On= TRUE;
+
+                        				Off=FALSE;
+
+            	}
+
+        				else
+
+        				{
+
+                        				On=FALSE;
+
+				Off=TRUE;
+
+        				}
+
+            				}
+
+    				}
+
+    				"
+
+				}
+
+	]
+		}
+	]
+}
+
+ DEF congtacdien Transform {
+	 translation 0 -2 -0.3
+	 scale 0.3 0.3 0.3
+	children [
+
+		Transform {
+			translation	0 -3 0
+			children [
+				Inline {url "cong_tac_dien.wrl"}
+		DEF	batquat TouchSensor	{
+				enabled	TRUE
+			}
+
+			DEF light DirectionalLight {
+
+				on FALSE
+
+				intensity 1
+
+				ambientIntensity 100
+
+				color 1 1 0
+
+				direction 1 0 0
+
+				}
+			DEF	light1 SpotLight {
+
+			on FALSE
+
+			intensity 1
+
+			ambientIntensity 0
+
+			color 1 1 1
+
+			location 0 0 0
+
+			direction 0 0 0
+
+			attenuation 1 0 0
+
+			radius 100
+
+			cutOffAngle 0.78
+
+			beamWidth 1.57
+
+		}
+			]
+		}
+		
+	]
+}
+
+
+
+ROUTE batquat.isActive TO ma.turnOn
+ROUTE ma.On	 TO light1.on
+ROUTE ma.On	TO thoigianmo.enabled
+ROUTE ma.Off TO	thoigiandong.enabled
+ROUTE batquat.touchTime TO thoigianmo.startTime
+ROUTE batquat.touchTime TO thoigiandong.startTime
+ROUTE thoigianmo.fraction_changed	TO cuaquay.	set_fraction
+ROUTE thoigiandong.fraction_changed	TO cuadong.	set_fraction
+ROUTE cuaquay.value_changed	TO cuadieuhoa.rotation
+ROUTE cuadong.value_changed	TO cuadieuhoa.rotation
+

@@ -1,0 +1,45 @@
+#VRML V2.0 utf8
+
+Transform {
+	scale 1 1 1
+	rotation 0 1 0 3.14
+	translation	-5 1 10
+	children	[
+	    	     Inline {url "nhachinh.wrl"}
+	]
+}
+
+Transform {
+	scale 1 1 1
+	rotation 0 1 0 3.14
+	translation	-5 1 10
+	children	[
+	    	     Inline {url "duongnhua.wrl"}
+	]
+}
+Transform {
+	scale 0.8 0.8 0.8
+	rotation 0 1 0 3.14
+	translation	-6 4 1 
+	children	[
+	    	     Inline {url "cotdien.wrl"}
+	]
+}
+Transform {
+	translation	-15 0 14
+	scale 0.2 0.2 0.2
+   children	[
+	    	     Inline {url "bonhoa.wrl"}
+	]
+}
+Transform {
+	translation	1 0 14
+	scale 0.2 0.2 0.2
+   children	[
+	    	     Inline {url "bonhoa.wrl"}
+	]
+}
+
+
+
+		

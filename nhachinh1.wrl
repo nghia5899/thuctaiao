@@ -1,0 +1,476 @@
+
+#VRML V2.0 utf8
+
+
+
+#size nha   x:13 y:7 z:20
+
+#tuongtruocphai
+
+Group {
+	
+	children [
+			#tuongtruocphai
+			Transform {	
+				translation 5.5 4 0
+				children [
+					Shape {
+								
+						geometry Box {size 2 6 0.2}
+						appearance DEF mautuongnha Appearance {
+							material Material {
+								diffuseColor 1 .933 .176
+								specularColor .87 .25 .25
+								ambientIntensity .157
+								shininess 1
+							}
+						}
+						
+						
+					}
+				]
+			}
+			#tuongtruoctrai
+			Transform {	
+				translation	-4.5 4 0
+				children [
+					Shape {
+						appearance USE mautuongnha
+		
+						geometry Box {size 4 6 0.2}
+					}
+				]
+			}
+
+			#tuongtrentruoc
+			Transform {	
+				translation	0 7.5 0
+				children [
+					Shape {
+					appearance USE mautuongnha	
+						geometry Box {size 13 1 0.2}
+					}
+				]
+			}
+			#tuongbenphai
+			Transform {	
+				translation 6.4 4.5 -10
+				children [
+					Shape {
+						appearance USE mautuongnha		
+						geometry Box {size 0.2 7 19.8}
+					}
+				]
+			}
+
+			#tuongmatbentrai-phai
+			Transform {	
+				translation -6.4 4.5 -1.1
+				children [
+					Shape {
+						appearance USE mautuongnha		
+						geometry Box {size 0.2 7 2}
+					}
+				]
+			}
+			#tuongmatbentrai-tren
+			Transform {	
+				translation	-6.4 7.5 -9.9
+				children [
+					Shape {
+						appearance USE mautuongnha	
+						geometry Box {size 0.2 1 19.8}
+					}
+				]
+			}
+			#tuongmatbentrai-trai1
+			Transform {	
+				translation -6.4 4.5 -6.6
+				children [
+					Shape {
+						appearance USE mautuongnha		
+						geometry Box {size 0.2 7 2}
+					}
+				]
+			}
+			#tuongmatbentrai-trai1
+			Transform {	
+				translation -6.4 4.5 -15.25
+				children [
+					Shape {
+						appearance USE mautuongnha		
+						geometry Box {size 0.2 7 9.3}	 
+					}
+				]
+			}
+			#tuongmatbentrai-cuasoduoi
+			 Transform {	
+				translation -6.4 2 -9.1
+				children [
+					Shape {
+						appearance USE mautuongnha											
+						geometry Box {size 0.2 2 3}	 
+					}
+				]
+			}
+			#tuongsau
+			 Transform {	
+				translation 0 4.5 -19.8
+				children [
+					Shape {
+						appearance USE mautuongnha											
+						geometry Box {size 13 7 0.2}	 
+					}
+				]
+}
+
+	]
+
+}
+
+#sannha
+Transform {	
+	translation	0 0.5 -9.9
+	children [
+		Shape {	
+			geometry Box {size 13 1 20}
+			appearance DEF maunau Appearance {
+				material Material {
+					diffuseColor .35 .16 .12
+					specularColor .21 .11 0
+					ambientIntensity .0533
+					shininess .05
+				}
+			}
+		}
+	]
+}
+
+#bacthangngoaicua
+Transform {	
+	translation	1 0.25 0.5
+	children [
+		Shape {	
+
+			geometry Box {size 7 0.5 1}
+			appearance Appearance {
+				material Material {
+					diffuseColor .38 .38 .42
+					specularColor .53 .53 .53
+					ambientIntensity .0933
+					shininess .93
+				}
+			}
+			
+			
+		}
+	]
+}
+
+#kinh
+ Transform {	
+	translation  -6.4 5 -9.1 
+	children [
+		Shape { 
+			geometry Box {size 0.1 4 3}	 
+			appearance Appearance {
+				material Material {
+					diffuseColor 1 1 1
+					specularColor .3 .92 .98
+					emissiveColor 0 .22 .35
+					ambientIntensity 0
+					shininess .1
+					transparency .753
+				}
+			}
+		}
+	]
+}
+#cuachinh
+Transform {
+	translation	1 1  0
+	children [
+		Inline {url "cua.wrl"}
+	]
+}
+
+Transform {
+	translation	-6.5 1  -3.85
+	scale 1 1.2 1 
+	rotation  0 1 0 -1.57
+	children [
+		Inline {url "cuaphu.wrl"}
+	]
+}
+#kinhtren
+Transform {
+	translation	-2.375 6.5  0
+	children [
+		Inline {url "kinhtrencua.wrl"}
+	]
+}
+#cauthang
+Transform {
+	translation	4.8 1.25 -17.6
+	scale 2.9 1 2
+	children [
+		Inline {url "cauthang.wrl"}
+	]
+}
+#quaybar
+ Transform {
+	translation	3.8 1.5 -2.5
+	children [
+		Inline {url "quaybar.wrl"}
+	]
+}
+#ghesofa
+DEF ghesofa Transform {
+	rotation 0 1 0 3.14
+	scale  1.5 1 1
+	translation  -3		 1 -0.16
+	children [
+		Inline {url "ghesofa.wrl"}
+	]
+}
+#nhavesinh
+  Transform {
+	translation   -4.8 3 -12
+	children [
+		Inline {url "nhavesinh.wrl"}
+	]
+}
+#tu
+Transform {
+	rotation  0 1 0 1.57
+	translation   5.8 4 -5.5
+	children [
+		Inline {url "ketreotuong.wrl"}
+	]
+}
+#tang2
+#Transform {
+#	translation   0 8 0
+#	children [
+#		Inline {url "tang2.wrl"}
+#	]
+#}
+#bienhieu
+ Transform {
+	translation   2 8 0.1
+	children [
+		Inline {url "bienhieu.wrl"}
+	]
+}
+#ruoutrentu
+ DEF chainuoc Transform {
+	children [
+		Transform {
+			translation   5.6 4.1 -5
+			children [
+		Inline {url "chailavie.wrl"}
+		]
+		}
+		Transform {
+			translation   5.6 4.1 -4.5
+			children [
+				Inline {url "chailavie.wrl"}
+			]
+		}
+		Transform {
+			translation   5.6 4.1 -4
+			children [
+				Inline {url "chailavie.wrl"}
+			]
+		}
+	]
+}
+Transform {
+	translation	0 0.05 -2
+	children [
+		 DEF bia Transform {
+	children [
+		Transform {
+			translation   5.6 4.1 -5
+			children [
+		Inline {url "biahanoi.wrl"}
+		]
+		}
+		Transform {
+			translation   5.6 4.1 -4.5
+			children [
+				Inline {url "biahanoi.wrl"}
+			]
+		}
+		Transform {
+			translation   5.6 4.1 -4
+			children [
+				Inline {url "biahanoi.wrl"}
+			]
+		}
+	]
+}
+	]
+}
+Transform {
+	translation	0 0.95 -2
+	children [DEF ruou1 Transform {
+	children [
+		Transform {
+			translation   5.6 4.1 -5
+			children [
+		Inline {url "ruou1.wrl"}
+		]
+		}
+		Transform {
+			translation   5.6 4.1 -4.5
+			children [
+				Inline {url "ruou1.wrl"}
+			]
+		}
+		Transform {
+			translation   5.6 4.1 -4
+			children [
+				Inline {url "ruou1.wrl"}
+			]
+		}
+	]
+} ]
+}
+Transform {
+	translation	0 0.951 0
+	children [DEF ruou2 Transform {
+	children [
+		Transform {
+			translation   5.6 4.1 -5
+			children [
+		Inline {url "ruou2.wrl"}
+		]
+		}
+		Transform {
+			translation   5.6 4.1 -4.5
+			children [
+				Inline {url "ruou2.wrl"}
+			]
+		}
+		Transform {
+			translation   5.6 4.1 -4
+			children [
+				Inline {url "ruou2.wrl"}
+			]
+		}
+	]
+} ]
+}
+
+
+
+
+#banuongcafe
+DEF bandoi Transform {
+	children [
+		  Transform {
+				translation	-5.3 2 -2.2
+				children [
+					DEF	bancafe Transform {
+						scale 0.5 0.5 0.5
+						children [
+							Inline {url "banuongcafe.wrl"}
+						]
+					}
+    			]
+			}
+			Transform {
+				translation	-3.8 2 -2.2
+				children [USE bancafe	 ]
+			}
+	]
+}
+#lynuoc
+DEF lyuoc Transform {
+	scale 0.3 0.3 0.3
+	translation	-4 2.12 -9
+	children [
+		Inline {url "lynuocam.wrl"}
+	]
+}
+DEF bia Transform {
+	scale 0.15 0.15 0.15
+	translation	-4 2.12 -9.8
+	children [
+		Inline {url "cocbia.wrl"}
+	]
+}
+
+DEF ghesofa1 Transform {
+	rotation 0 1 0 0
+	scale  1.5 1 1
+	translation  -6.2	 1 -11.5
+	children [
+		Inline {url "ghesofa.wrl"}
+	]
+}
+Transform {
+	translation	-0.1 0 -7.2
+	children [USE bandoi ]
+}
+
+Transform {
+	translation	-0.1 0 -7.2
+	children [USE ghesofa ]
+}
+
+#tulanh
+Transform {
+	scale  0.7 0.5 0.5
+	translation  1.1	 1.001 -13.5
+	children [
+		Inline {url "tulanh.wrl"}
+	]
+}
+#tivi
+Transform {
+	rotation 0 1 0 3.14
+	scale  0.5 0.5 0.5
+	translation -4.5	 6 -0.2
+	children [
+		Inline {url "tivi.wrl"}
+	]
+}
+
+
+#dieuhoa
+Transform {
+	scale 1.2 1 1
+	rotation 0 1 0 -1.57
+	translation   6 7 -10.5
+	children [
+		Inline {url "dieuhoa.wrl"}
+	]
+}
+
+#quat
+DEF quat1 Transform {
+	rotation 1 0 0 0.4
+	translation	-4 5 -11.7
+	scale 0.1 0.1 0.1						
+	children [
+		 Inline {url "quattuong.wrl"}
+
+	]
+}
+Transform {
+	translation	-6.1 6 -6.5
+	rotation 0 0 1 -0.4
+	children [
+	 Transform {
+			rotation 0 1 0 1.57
+			scale 0.1 0.1 0.1
+			children [Inline {url "quattuong.wrl"}]
+		}
+	]
+}
+
+
+
+		

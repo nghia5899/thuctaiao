@@ -1,0 +1,407 @@
+From: "Saved by Internet Explorer 11"
+Subject: 
+Date: Tue, 28 Jul 2020 23:41:47 +0700
+MIME-Version: 1.0
+Content-Type: text/html;
+	charset="unicode"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file://C:\Users\ADMIN\AppData\Local\Temp\~VPTMP1.wrl
+X-MimeOLE: Produced By Microsoft MimeOLE
+
+=FF=FE<=00!=00D=00O=00C=00T=00Y=00P=00E=00 =00H=00T=00M=00L=00 =
+=00P=00U=00B=00L=00I=00C=00 =
+=00"=00-=00/=00/=00W=003=00C=00/=00/=00D=00T=00D=00 =00H=00T=00M=00L=00 =
+=004=00.=000=00 =
+=00T=00r=00a=00n=00s=00i=00t=00i=00o=00n=00a=00l=00/=00/=00E=00N=00"=00>=00=
+=0D=00=0A=
+=00<=00H=00T=00M=00L=00>=00<=00H=00E=00A=00D=00>=00<=00M=00E=00T=00A=00 =
+=00c=00o=00n=00t=00e=00n=00t=00=3D=00"=00I=00E=00=3D=005=00.=000=000=000=00=
+0=00"=00 =
+=00h=00t=00t=00p=00-=00e=00q=00u=00i=00v=00=3D=00"=00X=00-=00U=00A=00-=00=
+C=00o=00m=00p=00a=00t=00i=00b=00l=00e=00"=00>=00=0D=00=0A=
+=00=0D=00=0A=
+=00<=00M=00E=00T=00A=00 =
+=00h=00t=00t=00p=00-=00e=00q=00u=00i=00v=00=3D=00"=00C=00o=00n=00t=00e=00=
+n=00t=00-=00T=00y=00p=00e=00"=00 =
+=00c=00o=00n=00t=00e=00n=00t=00=3D=00"=00t=00e=00x=00t=00/=00h=00t=00m=00=
+l=00;=00 =
+=00c=00h=00a=00r=00s=00e=00t=00=3D=00u=00n=00i=00c=00o=00d=00e=00"=00>=00=
+=0D=00=0A=
+=00<=00M=00E=00T=00A=00 =
+=00n=00a=00m=00e=00=3D=00"=00G=00E=00N=00E=00R=00A=00T=00O=00R=00"=00 =
+=00c=00o=00n=00t=00e=00n=00t=00=3D=00"=00M=00S=00H=00T=00M=00L=00 =
+=001=001=00.=000=000=00.=001=000=005=007=000=00.=001=000=000=001=00"=00>=00=
+<=00/=00H=00E=00A=00D=00>=00=0D=00=0A=
+=00<=00B=00O=00D=00Y=00>=00#VRML V2.0 utf8=0A=
+=0A=
+=0A=
+=0A=
+=0A=
+=0A=
+=0A=
+=0A=
+=0A=
+=0A=
+Group{=0A=
+=0A=
+children[=0A=
+=0A=
+Transform{=0A=
+translation 5.5 4 0=0A=
+children[=0A=
+Shape{=0A=
+=0A=
+geometry Box{size 2 6 0.2}=0A=
+appearance DEF mautuongnha Appearance{=0A=
+material Material{=0A=
+diffuseColor 1 .933 .176=0A=
+specularColor .87 .25 .25=0A=
+ambientIntensity .157=0A=
+shininess 1=0A=
+}=0A=
+}=0A=
+=0A=
+=0A=
+}=0A=
+]=0A=
+}=0A=
+=0A=
+Transform{=0A=
+translation	-4.5 4 0=0A=
+children[=0A=
+Shape{=0A=
+appearance USE mautuongnha=0A=
+=0A=
+geometry Box{size 4 6 0.2}=0A=
+}=0A=
+]=0A=
+}=0A=
+=0A=
+=0A=
+Transform{=0A=
+translation	0 7.5 0=0A=
+children[=0A=
+Shape{=0A=
+appearance USE mautuongnha=0A=
+geometry Box{size 13 1 0.2}=0A=
+}=0A=
+]=0A=
+}=0A=
+=0A=
+Transform{=0A=
+translation 6.4 4.5 -10=0A=
+children[=0A=
+Shape{=0A=
+appearance USE mautuongnha=0A=
+geometry Box{size 0.2 7 19.8}=0A=
+}=0A=
+]=0A=
+}=0A=
+=0A=
+=0A=
+Transform{=0A=
+translation -6.4 4.5 -1.1=0A=
+children[=0A=
+Shape{=0A=
+appearance USE mautuongnha=0A=
+geometry Box{size 0.2 7 2}=0A=
+}=0A=
+]=0A=
+}=0A=
+=0A=
+Transform{=0A=
+translation	-6.4 7.5 -9.9=0A=
+children[=0A=
+Shape{=0A=
+appearance USE mautuongnha=0A=
+geometry Box{size 0.2 1 19.8}=0A=
+}=0A=
+]=0A=
+}=0A=
+=0A=
+Transform{=0A=
+translation -6.4 4.5 -6.6=0A=
+children[=0A=
+Shape{=0A=
+appearance USE mautuongnha=0A=
+geometry Box{size 0.2 7 2}=0A=
+}=0A=
+]=0A=
+}=0A=
+=0A=
+Transform{=0A=
+translation -6.4 4.5 -15.25=0A=
+children[=0A=
+Shape{=0A=
+appearance USE mautuongnha=0A=
+geometry Box{size 0.2 7 9.3}=0A=
+}=0A=
+]=0A=
+}=0A=
+=0A=
+Transform{=0A=
+translation -6.4 2 -9.1=0A=
+children[=0A=
+Shape{=0A=
+appearance USE mautuongnha=0A=
+geometry Box{size 0.2 2 3}=0A=
+}=0A=
+]=0A=
+}=0A=
+=0A=
+Transform{=0A=
+translation 0 4.5 -19.8=0A=
+children[=0A=
+Shape{=0A=
+appearance USE mautuongnha=0A=
+geometry Box{size 13 7 0.2}=0A=
+}=0A=
+]=0A=
+}=0A=
+=0A=
+]=0A=
+=0A=
+}=0A=
+=0A=
+=0A=
+Transform{=0A=
+translation	0 0.5 -9.9=0A=
+children[=0A=
+Shape{=0A=
+geometry Box{size 13 1 20}=0A=
+appearance DEF maunau Appearance{=0A=
+material Material{=0A=
+diffuseColor .35 .16 .12=0A=
+specularColor .21 .11 0=0A=
+ambientIntensity .0533=0A=
+shininess .05=0A=
+}=0A=
+}=0A=
+}=0A=
+]=0A=
+}=0A=
+=0A=
+=0A=
+Transform{=0A=
+translation	1 0.25 0.5=0A=
+children[=0A=
+Shape{=0A=
+=0A=
+geometry Box{size 7 0.5 1}=0A=
+appearance Appearance{=0A=
+material Material{=0A=
+diffuseColor .38 .38 .42=0A=
+specularColor .53 .53 .53=0A=
+ambientIntensity .0933=0A=
+shininess .93=0A=
+}=0A=
+}=0A=
+=0A=
+=0A=
+}=0A=
+]=0A=
+}=0A=
+=0A=
+=0A=
+Transform{=0A=
+translation -6.4 5 -9.1=0A=
+children[=0A=
+Shape{=0A=
+geometry Box{size 0.1 4 3}=0A=
+appearance Appearance{=0A=
+material Material{=0A=
+diffuseColor 1 1 1=0A=
+specularColor .3 .92 .98=0A=
+emissiveColor 0 .22 .35=0A=
+ambientIntensity 0=0A=
+shininess .1=0A=
+transparency .753=0A=
+}=0A=
+}=0A=
+}=0A=
+]=0A=
+}=0A=
+=0A=
+Transform{=0A=
+translation	1 1 0=0A=
+children[=0A=
+Inline{url "cua.wrl"}=0A=
+]=0A=
+}=0A=
+=0A=
+Transform{=0A=
+translation	-6.5 1 -3.85=0A=
+scale 1 1.2 1=0A=
+rotation 0 1 0 -1.57=0A=
+children[=0A=
+Inline{url "cuaphu.wrl"}=0A=
+]=0A=
+}=0A=
+=0A=
+Transform{=0A=
+translation	-2.375 6.5 0=0A=
+children[=0A=
+Inline{url "kinhtrencua.wrl"}=0A=
+]=0A=
+}=0A=
+=0A=
+Transform{=0A=
+translation	4.8 1.25 -17.6=0A=
+scale 2.9 1 2=0A=
+children[=0A=
+Inline{url "cauthang.wrl"}=0A=
+]=0A=
+}=0A=
+=0A=
+Transform{=0A=
+translation	3.8 1.5 -2.5=0A=
+children[=0A=
+Inline{url "quaybar.wrl"}=0A=
+]=0A=
+}=0A=
+=0A=
+DEF ghesofa Transform{=0A=
+rotation 0 1 0 3.14=0A=
+scale 1.5 1 1=0A=
+translation -3 1 -0.16=0A=
+children[=0A=
+Inline{url "ghesofa.wrl"}=0A=
+]=0A=
+}=0A=
+=0A=
+Transform{=0A=
+translation -4.8 3 -12=0A=
+children[=0A=
+Inline{url "nhavesinh.wrl"}=0A=
+]=0A=
+}=0A=
+=0A=
+Transform{=0A=
+rotation 0 1 0 1.57=0A=
+translation 5.8 4 -5.5=0A=
+children[=0A=
+Inline{url "ketreotuong.wrl"}=0A=
+]=0A=
+}=0A=
+=0A=
+Transform{=0A=
+translation 0 8 0=0A=
+children[=0A=
+Inline{url "tang2.wrl"}=0A=
+]=0A=
+}=0A=
+=0A=
+Transform{=0A=
+translation 2 8 0.1=0A=
+children[=0A=
+Inline{url "bienhieu.wrl"}=0A=
+]=0A=
+}=0A=
+=0A=
+DEF chainuoc Transform{=0A=
+children[=0A=
+Transform{=0A=
+translation 5.6 4.1 -5=0A=
+children[=0A=
+Inline{url "chailavie.wrl"}=0A=
+]=0A=
+}=0A=
+Transform{=0A=
+translation 5.6 4.1 -4.5=0A=
+children[=0A=
+Inline{url "chailavie.wrl"}=0A=
+]=0A=
+}=0A=
+Transform{=0A=
+translation 5.6 4.1 -4=0A=
+children[=0A=
+Inline{url "chailavie.wrl"}=0A=
+]=0A=
+}=0A=
+]=0A=
+}=0A=
+Transform{=0A=
+translation	0 0 -2=0A=
+children[USE chainuoc]=0A=
+}=0A=
+Transform{=0A=
+translation	0 1 -2=0A=
+children[USE chainuoc]=0A=
+}=0A=
+Transform{=0A=
+translation	0 1 0=0A=
+children[USE chainuoc]=0A=
+}=0A=
+=0A=
+=0A=
+=0A=
+=0A=
+=0A=
+DEF bandoi Transform{=0A=
+children[=0A=
+Transform{=0A=
+translation	-5.3 2 -2.2=0A=
+children[=0A=
+DEF	bancafe Transform{=0A=
+scale 0.5 0.5 0.5=0A=
+children[=0A=
+Inline{url "banuongcafe.wrl"}=0A=
+]=0A=
+}=0A=
+]=0A=
+}=0A=
+Transform{=0A=
+translation	-3.8 2 -2.2=0A=
+children[USE bancafe]=0A=
+}=0A=
+]=0A=
+}=0A=
+=0A=
+DEF ghesofa1 Transform{=0A=
+rotation 0 1 0 0=0A=
+scale 1.5 1 1=0A=
+translation -6.2 1 -11.5=0A=
+children[=0A=
+Inline{url "ghesofa.wrl"}=0A=
+]=0A=
+}=0A=
+Transform{=0A=
+translation	-0.1 0 -7.2=0A=
+children[USE bandoi]=0A=
+}=0A=
+=0A=
+Transform{=0A=
+translation	-0.1 0 -7.2=0A=
+children[USE ghesofa]=0A=
+}=0A=
+=0A=
+=0A=
+Transform{=0A=
+scale 0.7 0.5 0.5=0A=
+translation 1.1 1.001 -13.5=0A=
+children[=0A=
+Inline{url "tulanh.wrl"}=0A=
+]=0A=
+}=0A=
+=0A=
+Transform{=0A=
+rotation 0 1 0 3.14=0A=
+scale 0.5 0.5 0.5=0A=
+translation -4.5 6 -0.2=0A=
+children[=0A=
+Inline{url "tivi.wrl"}=0A=
+]=0A=
+}=0A=
+=0A=
+=0A=
+=0A=
+Transform{=0A=
+scale 1.2 1 1=0A=
+rotation 0 1 0 -1.57=0A=
+translation 5.8 7 -10.5=0A=
+children[=0A=
+Inline{url "dieuhoa.wrl"}=0A=
+]=0A=
+}=0A=
+<=00/=00B=00O=00D=00Y=00>=00<=00/=00H=00T=00M=00L=00>=00=0D=00=0A=
+=00

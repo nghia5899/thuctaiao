@@ -1,0 +1,190 @@
+#VRML V2.0 utf8
+DEF	 oto Transform {
+	translation	0 0 0
+    children	[
+	   	Transform {
+			rotation 0 0 1 0.7
+			translation	1.9 1.5 -1.5
+		    children [
+			    DEF matkinh Shape	{
+
+				   geometry Box { size 1 0.1 3 }
+				   appearance Appearance {
+					   material Material {
+						   diffuseColor 0 .34 0
+						   specularColor .49 1 .77
+						   ambientIntensity .831
+						   shininess .392
+						   transparency .396
+					   }
+				   }
+				   
+				}
+			]
+		}
+		 Transform {
+			rotation 0 0 1 -0.7
+			translation 4.6 1.5 -1.5
+		    children [
+			    USE	matkinh
+			]
+		}
+	  Transform {
+			children	[
+						   
+							DEF banhxe Transform {
+						scale 1.1 1.1 1.1 
+						translation	1.9 0.6 -0.2
+						children	[
+			
+			        			Inline {
+
+									url ["banhxeoto.wrl"]
+
+									bboxCenter 0 0 0
+
+									bboxSize -1 -1 -1
+
+									}
+
+
+						]
+					}
+					Transform {
+						translation	0 0 -3.2
+						children [
+						   USE banhxe
+						]
+					}
+					Transform {
+						translation	3 0 -3.2
+						children [
+						   USE banhxe
+						]
+					}
+					Transform {
+						translation	3 0 0
+						children [
+						   USE banhxe
+						]
+					}
+			]
+		}
+	     
+        DEF	mattrenoto Transform {
+			translation	3.3 1.8 -1.5
+		    children [
+			    Shape {
+					geometry Box {size 2 0.05 3}
+				}
+			]
+		}
+	    DEF	thantruocoto Transform {
+			translation	5 0.8 -1.5
+			children	
+			[
+				DEF than Shape {
+					 
+					geometry Box { size  3 0.8 2.8}
+					appearance Appearance {
+						material Material {
+							diffuseColor .2 0 .8
+							specularColor .5 .5 .5
+							emissiveColor .04 0 .15
+							ambientIntensity 0
+						}
+					}
+				}
+			]
+		}
+		Transform {
+			translation	-5 0 0
+			children	[
+			
+			  USE	thantruocoto
+			]
+		}
+	    DEF	matbencua Transform	{
+		    children [
+			
+			      DEF  cuaoto Shape {
+            appearance Appearance{}
+
+             geometry IndexedFaceSet {
+
+                	coord Coordinate {
+
+                        	point [1.6 1.3 0, 2.6 1.3 0, 2.8 1.7 0,3.5 1.7 0,3.5 1.3 0,3.6 1 0,3.6 0.7 0,3.5 0.4 0, 5 0.4 0,5.1 0.7 0,5.1 1 0,4.7 1.3 0,4.2 1.8 0,4.1 1.8 0 ,4.55 1.3 0,3.6 1.3 0,3.6 1.8 0,2.3 1.8 0]
+
+            	    }
+
+							coordIndex [0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17]
+
+							color Color {
+
+                       			color [1 1 1 ,0 0 0]
+
+							}
+
+						colorIndex [0 0]
+
+						colorPerVertex FALSE
+
+						convex FALSE
+
+						solid FALSE
+
+
+
+				}
+
+
+		   	}
+	   DEF  cuaoto2 Shape {
+            appearance Appearance{}
+
+             geometry IndexedFaceSet {
+
+                	coord Coordinate {
+
+                        point [3.5 0.4 0,3.6 0.7 0,3.6 1 0,3.5 1.3 0,0.7 1.3 0,0.3 1.2 0, 0.15 1.15 0, 
+							  0.1 1 0,0.1 0.7 0,0.2 0.6 0,1.4 0.4 0,1.3 0.6 0,1.4 0.8 0,1.5 0.9 0,1.9 0.9 0,2.3 0.8 0   
+							  2.5 0.4 0,
+						
+						]
+
+            	    }
+
+							coordIndex [0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16]
+
+							color Color {
+
+                       			color [1 1 1 ,0 0 0]
+
+							}
+
+						colorIndex [1 1]
+
+						colorPerVertex FALSE
+
+						convex FALSE
+
+						solid FALSE
+
+
+
+				}
+
+
+		   	}
+			]
+		}
+		Transform {
+			translation	 0 0 -3
+			children	[
+			   USE matbencua
+			]
+		}
+	]
+}
+
